@@ -32,7 +32,7 @@ const Header = () => {
     <header className=" py-4">
       <nav className="px-5 lg:px-10 mx-auto flex justify-between items-center">
         <Link to="/">
-          <img src="./logo.png" alt="BridgeHire logo" className="h-14" />
+          <img src="https://github.com/mercy089/textanimation/blob/main/logo.png?raw=true" alt="BridgeHire logo" className="h-14" />
         </Link>
         <div className="flex items-center space-x-1">
           {/* Dark Mode Toggle */}

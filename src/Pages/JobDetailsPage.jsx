@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-// import { SelectContent, SelectItem } from "@radix-ui/react-select";
+import ApplyJobsDrawer from "@/components/ApplyJobs";
 
 const JobDetailsPage = () => {
   const { theme } = useTheme();
@@ -34,6 +34,8 @@ const JobDetailsPage = () => {
     const isOpen = value === "open";
     fetchHiringStatus(isOpen).then(() => fetchJobsDetails());
   };
+  console.log(JobsDetails);
+  
 
   useEffect(() => {
     if (isLoaded) fetchJobsDetails();
@@ -136,6 +138,17 @@ const JobDetailsPage = () => {
         What you will do ?
       </h2>
       <ul className="sm:text-lg">{renderList(JobsDetails?.responsibility)}</ul>
+
+      {
+        JobsDetails?.recruiter_id !== user?.id && 
+        <ApplyJobsDrawer
+        job={JobsDetails}
+        user={user}
+        fetchJob={fetchJobsDetails}
+        appliedJob={JobsDetails?.applications?.find((ap)=>ap.candidate_id === user?.id)}
+        /> 
+      }
+      
     </div>
   );
 };

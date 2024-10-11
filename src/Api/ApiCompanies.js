@@ -1,5 +1,5 @@
 import supabaseClient from "@/utils/supabase";
-
+//! fetching companies from supabase database using supabase client function
 export async function getCompanies(token) {
   const supabase = await supabaseClient(token);
 

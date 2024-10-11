@@ -1,0 +1,37 @@
+.app {
+  --transition-duration: 400ms;
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.app svg {
+  transition: stroke var(--transition-duration);
+  stroke: currentColor;
+}
+
+.moon-icon {
+  stroke-dasharray: 0px 1px;
+  opacity: 0;
+  transition: stroke-dasharray 0.5s ease-in, opacity 300ms ease-in;
+}
+
+.sun-icon {
+  stroke-dasharray: 1px 1px;
+  opacity: 1;
+  transition: stroke-dasharray 0.5s ease-in, opacity 300ms ease-in;
+}
+
+.app.dark .moon-icon {
+  stroke-dasharray: 1px 1px;
+  opacity: 1;
+}
+
+.app.dark .sun-icon {
+  stroke-dasharray: 0px 1px;
+  opacity: 0;
+}

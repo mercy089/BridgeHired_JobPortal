@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "position": "Software Engineer",
+      "company": "TechCorp",
+      "feedback": "This platform helped me land my dream job in just a few weeks!",
+      "avatar": "https://media.istockphoto.com/id/1211994283/photo/portrait-of-a-confident-young-businessman.jpg?s=612x612&w=0&k=20&c=AbFFRL9ukwLFluXNc0rq17stf7dgf3EHrpToM1CkY94="
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "position": "HR Manager",
+      "company": "BusinessSolutions",
+      "feedback": "We've found amazing talent through this site. Highly recommended!",
+      "avatar": "https://media.istockphoto.com/id/666885016/photo/happy-young-man-web-designer-standing-with-laptop.jpg?s=612x612&w=0&k=20&c=ru3SoJi3GmnKOGg2VjzV_so7y9Ao7-Qbe0oNz9jNqXY="
+    },
+    {
+      "id": 3,
+      "name": "Emily Johnson",
+      "position": "Marketing Specialist",
+      "company": "Creative Minds",
+      "feedback": "The user interface is intuitive and makes job searching a breeze.",
+      "avatar": "https://media.istockphoto.com/id/1456829027/photo/senior-software-developer-working-on-a-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=cYJ9SDQUzvgIYSVZ9BDh6uec8df_r4jgz5iGf9OXU7A="
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "position": "Product Manager",
+      "company": "InnovateX",
+      "feedback": "A fantastic platform for both job seekers and employers. Our hiring process has never been smoother.",
+      "avatar": "https://media.istockphoto.com/id/1388227989/photo/a-portrait-of-a-happy-casually-dressed-man-with-moustaches-looking-at-camera-while-sitting-in.jpg?s=612x612&w=0&k=20&c=zGMyiJ6sXcFA5InH6Qa5FPmQ1KSREPxSYLhxcV0a9iY="
+    },
+    {
+      "id": 5,
+      "name": "Sarah Williams",
+      "position": "UX Designer",
+      "company": "DesignHub",
+      "feedback": "I found several great opportunities that matched my skills perfectly. Thank you!",
+      "avatar": "https://media.istockphoto.com/id/1197071216/photo/portrait-of-a-smart-and-handsome-it-specialist-wearing-glasses-smiles-behind-him-personal.jpg?s=612x612&w=0&k=20&c=Dy8TjvDmeXWhR6gAZ_OuqLu3ytUJmtycEYdVQenpWoI="
+    }
+  ]
+  

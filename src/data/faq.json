@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What is BridgeHired?",
+    "answer": "BridgeHired is a platform that connects employers and candidates, streamlining the hiring process to make it faster and more efficient for both parties."
+  },
+  {
+    "id": 2,
+    "question": "How does BridgeHired benefit employers?",
+    "answer": "BridgeHired allows employers to post job openings and access a large pool of qualified candidates quickly, making the recruitment process easier and more time-efficient."
+  },
+  {
+    "id": 3,
+    "question": "How do I apply for a job on BridgeHired?",
+    "answer": "To apply for a job, simply sign up, create your profile, and browse through job listings. Once you find a suitable job, you can submit your application directly through the platform."
+  },
+  {
+    "id": 4,
+    "question": "Is BridgeHired free to use?",
+    "answer": "Yes, candidates can use BridgeHired for free to browse jobs and apply. Employers may need to choose from different subscription plans to post jobs and access additional recruitment tools."
+  },
+  {
+    "id": 5,
+    "question": "Can I track my application status?",
+    "answer": "Yes, candidates can easily track their application status and get notified when there are updates regarding their job applications."
+  },
+  {
+    "id": 6,
+    "question": "What types of jobs are available on BridgeHired?",
+    "answer": "BridgeHired offers job listings across various industries, including technology, healthcare, finance, and more, catering to a wide range of skills and experience levels."
+  },
+  {
+    "id": 7,
+    "question": "How secure is my personal information on BridgeHired?",
+    "answer": "BridgeHired takes data privacy seriously and uses advanced security measures to ensure that your personal information is protected and only accessible by authorized parties."
+  },
+  {
+    "id": 8,
+    "question": "How does BridgeHired help candidates stand out?",
+    "answer": "BridgeHired allows candidates to create detailed profiles, showcase their skills, and upload resumes. Our AI-driven tools help match candidates with jobs that best fit their experience."
+  },
+  {
+    "id": 9,
+    "question": "Can employers use BridgeHired for remote job postings?",
+    "answer": "Yes, BridgeHired supports job postings for remote positions, allowing employers to find the best talent regardless of location."
+  },
+  {
+    "id": 10,
+    "question": "What support does BridgeHired offer for hiring managers?",
+    "answer": "BridgeHired offers tools for job posting, candidate tracking, and collaboration among hiring teams, making it easier to manage the recruitment process from start to finish."
+  }
+]

@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import ApplyJobsDrawer from "@/components/ApplyJobs";
+import { ApplyJobDrawer } from "@/components/ApplyJobs";
 
 const JobDetailsPage = () => {
   const { theme } = useTheme();
@@ -138,17 +138,14 @@ const JobDetailsPage = () => {
         What you will do ?
       </h2>
       <ul className="sm:text-lg">{renderList(JobsDetails?.responsibility)}</ul>
-
-      {
-        JobsDetails?.recruiter_id !== user?.id && 
-        <ApplyJobsDrawer
-        job={JobsDetails}
-        user={user}
-        fetchJob={fetchJobsDetails}
-        appliedJob={JobsDetails?.applications?.find((ap)=>ap.candidate_id === user?.id)}
-        /> 
-      }
-      
+      {JobsDetails?.recruiter_id !== user?.id && (
+        <ApplyJobDrawer
+          job={JobsDetails}
+          user={user}
+          fetchJob={fetchJobsDetails}
+          applied={JobsDetails?.applications?.find((ap) => ap.candidate_id === user.id)}
+        />
+      )}
     </div>
   );
 };

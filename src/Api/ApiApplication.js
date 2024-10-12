@@ -54,7 +54,7 @@ export async function getApplications(token, { user_id }) {
   const supabase = await supabaseClient(token);
   const { data, error } = await supabase
     .from("applications")
-    .select("*, job:jobs(title, company:companies(name))")
+    .select(`*, job:jobs(title, companies:companies(name))`)
     .eq("candidate_id", user_id);
 
   if (error) {

@@ -45,7 +45,7 @@ const JobsCard = ({
       <CardHeader className="h-[20%]">
         <CardTitle className="flex text-xl justify-between font-bold">
           {job.title}
-          {isMyJobs && && (
+          {isMyJobs && (
             <Trash2Icon
               fill="red"
               size={20}

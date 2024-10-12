@@ -209,3 +209,8 @@
 * {
   scrollbar-width: none;
 }
+
+.wmde-markdown{
+  background-color: rgba(95, 220, 255, 0.329);
+  color: black;
+}

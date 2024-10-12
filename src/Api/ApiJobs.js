@@ -142,3 +142,17 @@ export async function addNewJob(token, _, jobData) {
 
   return data;
 }
+//! get saved jobs function for user profile page to display saved jobs data from supabase database using supabase client function
+export async function getSavedJobs(token) {
+  const supabase = await supabaseClient(token);
+  const { data, error } = await supabase
+    .from("saved_jobs")
+    .select(`*, job: jobs(*, companies: companies(name,logo_url))`);
+
+  if (error) {
+    console.error("Error fetching Saved Jobs:", error);
+    return null;
+  }
+
+  return data;
+}

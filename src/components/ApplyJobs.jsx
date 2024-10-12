@@ -85,16 +85,16 @@ export function ApplyJobDrawer({ user, job, fetchJob, applied = false }) {
         </Button>
       </DrawerTrigger>
       <DrawerContent>
-        <DrawerHeader>
+        <DrawerHeader className="px-5">
           <DrawerTitle>
-            Apply for {job?.title} at {job?.company?.name}
+            Apply for {job?.title} at {job?.companies?.name}
           </DrawerTitle>
-          <DrawerDescription>Please Fill the form below</DrawerDescription>
+          <DrawerDescription>Please Fill the form below to apply</DrawerDescription>
         </DrawerHeader>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-4 p-4 pb-0"
+          className="flex flex-col gap-4 p-4 px-10 pb-0"
         >
           <Input
             type="number"
@@ -162,7 +162,7 @@ export function ApplyJobDrawer({ user, job, fetchJob, applied = false }) {
           </Button>
         </form>
 
-        <DrawerFooter>
+        <DrawerFooter className="px-10">
           <DrawerClose asChild>
             <Button variant="outline">Cancel</Button>
           </DrawerClose>

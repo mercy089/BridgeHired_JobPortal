@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ApplyJobDrawer } from "@/components/ApplyJobs";
+import ApplicationCard from "@/components/ApplicationCard";
 
 const JobDetailsPage = () => {
   const { theme } = useTheme();
@@ -35,7 +36,6 @@ const JobDetailsPage = () => {
     fetchHiringStatus(isOpen).then(() => fetchJobsDetails());
   };
   console.log(JobsDetails);
-  
 
   useEffect(() => {
     if (isLoaded) fetchJobsDetails();
@@ -143,9 +143,32 @@ const JobDetailsPage = () => {
           job={JobsDetails}
           user={user}
           fetchJob={fetchJobsDetails}
-          applied={JobsDetails?.applications?.find((ap) => ap.candidate_id === user.id)}
+          applied={JobsDetails?.applications?.find(
+            (ap) => ap.candidate_id === user.id
+          )}
         />
       )}
+
+      {/* {!loadingHiringStatus && (
+        <div>
+        <p className="text-lg mb-4">Updating Hiring Status...</p>
+        <BarLoader width={"100%"} color={theme === "dark" ? "#fff" : "#000"} />
+      </div>
+      )} */}
+      {JobsDetails?.applications?.length > 0 &&
+        JobsDetails?.recruiter_id === user?.id && (
+          <div className="flex flex-col gap-2">
+            <h2 className="font-bold mb-4 text-xl ml-1">Applications</h2>
+            {JobsDetails?.applications.map((application) => {
+              return (
+                <ApplicationCard
+                  key={application.id}
+                  application={application}
+                />
+              );
+            })}
+          </div>
+        )}
     </div>
   );
 };

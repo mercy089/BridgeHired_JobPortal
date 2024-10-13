@@ -61,7 +61,7 @@ const JobsCard = ({
             <img
               src={job.companies.logo_url}
               alt={job.companies.name}
-              className="h-12 object-cover filter dark:brightness-90 brightness-75"
+              className="h-10 object-cover filter dark:brightness-90 brightness-75"
             />
           )}
 

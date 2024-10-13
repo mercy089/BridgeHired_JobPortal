@@ -9,11 +9,11 @@ const AppLayout = () => {
   return (
     <div>
       {theme==="dark" ? <div className='grid-backgroundDark '></div> : <div className='grid-backgroundLight '></div>}
-       <Header/> 
       <main className='min-h-screen container mx-auto'>
+       <Header/> 
         <Outlet />
-      </main>
         <Footer/>
+      </main>
     </div>
   )
 }

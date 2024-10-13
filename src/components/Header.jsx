@@ -34,14 +34,14 @@ const Header = () => {
         <Link to="/">
           <img src="https://github.com/mercy089/textanimation/blob/main/logo.png?raw=true" alt="BridgeHire logo" className="h-14" />
         </Link>
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-2">
           {/* Dark Mode Toggle */}
           <DarkMode />
 
-          <div className="flex  items-center space-x-1">
+          <div className="flex  items-center space-x-2">
             {/* Signed Out View */}
             <SignedOut>
-              <Link to="/blogs">
+              <Link to="/blogs" className="hidden md:block">
                 <Button variant="blue" className="h-[40px] rounded-full">
                   <Newspaper size={20} className="mr-2" />
                   Blogs

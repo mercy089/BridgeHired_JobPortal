@@ -1,6 +1,6 @@
 import supabaseClient, { supabaseUrl } from "@/utils/supabase";
 
-// - Apply to job ( candidate )
+//! apply to job function for applying to job in supabase database using supabase client function
 export async function applyToJob(token, _, jobData) {
   const supabase = await supabaseClient(token);
 
@@ -33,7 +33,7 @@ export async function applyToJob(token, _, jobData) {
   return data;
 }
 
-// - Edit Application Status ( recruiter )
+//! update application status function for user profile page to update application status from supabase database using supabase client function 
 export async function updateApplicationStatus(token, { job_id }, status) {
   const supabase = await supabaseClient(token);
   const { data, error } = await supabase
@@ -49,7 +49,7 @@ export async function updateApplicationStatus(token, { job_id }, status) {
 
   return data;
 }
-
+//! get applications function for user profile page to display applications data from supabase database using supabase client function
 export async function getApplications(token, { user_id }) {
   const supabase = await supabaseClient(token);
   const { data, error } = await supabase

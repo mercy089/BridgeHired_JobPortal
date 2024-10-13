@@ -10,8 +10,10 @@ import { Heart, MapPinIcon, Trash2Icon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import useFetch from "@/Hooks/useFetch";
-import { SavedJobs } from "@/Api/ApiJobs";
+import { deleteJob, SavedJobs } from "@/Api/ApiJobs";
 import { useUser } from "@clerk/clerk-react";
+import { BarLoader } from "react-spinners";
+import { useTheme } from "@/components/theme-provider";
 
 const JobsCard = ({
   job,
@@ -19,6 +21,7 @@ const JobsCard = ({
   savedInitial = false,
   onJobSaved = () => {},
 }) => {
+  const { theme } = useTheme();
 
   const [isSaved, setIsSaved] = useState(savedInitial);
   const {
@@ -37,11 +40,31 @@ const JobsCard = ({
     onJobSaved();
   }
 
+  const {
+    loading :loadingDeleteJob,
+    fetchFunction :fnDeleteJob
+  }=useFetch(deleteJob,{
+    job_id:job.id 
+  })
+
+  const handleDeleteJob=async()=>{
+    await fnDeleteJob();
+    onJobSaved();
+  }
+
   useEffect(()=>{
     if(saved!==undefined) setIsSaved(saved?.length>0)
   },[saved])
   return (
     <Card className="transition flex flex-col gap-1 duration-300 bg-gray-300 bg-opacity-70 dark:bg-gray-800 dark:bg-opacity-40 border dark:border-gray-900 rounded-lg shadow-md">
+      {
+        loadingDeleteJob && (
+          <div>
+          <p className="text-lg mb-4">Deleting job...</p>
+          <BarLoader width={"100%"} color={theme === "dark" ? "#fff" : "#000"} />
+        </div>
+        )
+      }
       <CardHeader className="h-[20%]">
         <CardTitle className="flex text-xl justify-between font-bold">
           {job.title}
@@ -50,6 +73,7 @@ const JobsCard = ({
               fill="red"
               size={20}
               className="cursor-pointer text-red-300"
+              onClick={handleDeleteJob}
             />
           )}
         </CardTitle>

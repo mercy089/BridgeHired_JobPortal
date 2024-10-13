@@ -41,12 +41,6 @@ const Header = () => {
           <div className="flex  items-center space-x-2">
             {/* Signed Out View */}
             <SignedOut>
-              <Link to="/blogs" className="hidden md:block">
-                <Button variant="blue" className="h-[40px] rounded-full">
-                  <Newspaper size={20} className="mr-2" />
-                  Blogs
-                </Button>
-              </Link>
               <Button
                 variant="outline"
                 className="h-[40px] rounded-full"
@@ -57,12 +51,14 @@ const Header = () => {
             </SignedOut>
             {/* Signed In View */}
             <SignedIn>
-              <Link to="/blogs">
+            {user?.unsafeMetadata?.role === "candidate" && (
+               <Link to="/blogs">
                 <Button variant="blue" className="h-[40px] rounded-full">
                   <Newspaper size={20} className="mr-2" />
                   Blogs
                 </Button>
-              </Link>
+              </Link> 
+            )}
               {user?.unsafeMetadata?.role === "recruiter" && (
                 <Link to="/post-job">
                   <Button

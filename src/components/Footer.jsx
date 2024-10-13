@@ -18,9 +18,6 @@ const Footer = () => {
           <Link to="/privacy" className="hover:text-gray-400">
             Privacy Policy
           </Link>
-          <Link to="/blogs" className="hover:text-gray-400">
-            Blogs
-          </Link>
         </div>
         <div className="flex items-center justify-center gap-2">
           <div className="text-lg font-semibold">

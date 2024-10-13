@@ -12,7 +12,7 @@ const HeroSection = () => (
       </span>
     </h1>
     <p className="font-serif sm:mt-4 text-base sm:text-xl flex-col flex gap-1 text-center">
-      At BridgeHire, we simplify and accelerate the hiring process by
+      At BridgeHired, we simplify and accelerate the hiring process by
       connecting top talent with the right employers.{" "}
       <span>
         Whether you&apos;re looking to land your dream job or seeking the best

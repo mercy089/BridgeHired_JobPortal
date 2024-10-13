@@ -21,7 +21,7 @@ const CompanyHighlightSection = () => (
             className={`hover:scale-105 ${item.bgColor} ${item.darkBgColor} shadow-md hover:shadow-gray-600 dark:hover:shadow-slate-300 flex flex-col items-center justify-center transition duration-300`}
           >
             <CardHeader className="flex flex-col items-center justify-center">
-              <IconComponent className={`text-4xl ${item.iconColor} ${item.darkIconColor} mb-4`} />
+              <IconComponent className={`text-4xl ${item.iconColor} ${item.darkIconColor} mb-4 `} />
               <h2 className="text-2xl text-center font-bold text-gray-900 dark:text-gray-100">
                 {item.title}
               </h2>

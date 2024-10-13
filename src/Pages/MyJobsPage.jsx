@@ -18,7 +18,7 @@ const MyJobsPage = () => {
 
   return (
     <div className="flex flex-col gap-4 px-5">
-      <h1 className="gradient-title font-extrabold text-5xl sm:text-7xl text-center pb-8">
+      <h1 className="lobster-regular font-extrabold text-5xl sm:text-7xl text-center pb-8">
         {user?.unsafeMetadata?.role === "candidate"
           ? "My Applications"
           : "My Jobs"}

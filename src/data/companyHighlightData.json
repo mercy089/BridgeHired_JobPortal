@@ -4,7 +4,7 @@
       "icon": "FaUserGraduate",
       "title": "Find Your Dream Job",
       "description": "Access thousands of jobs from leading companies in tech, healthcare, finance, and more.",
-      "bgColor": "bg-blue-100",
+      "bgColor": "bg-blue-300",
       "iconColor": "text-blue-500",
       "darkBgColor": "dark:bg-gray-800",
       "darkIconColor": "dark:text-blue-400"
@@ -14,7 +14,7 @@
       "icon": "FaBriefcase",
       "title": "Post Jobs & Hire Talent",
       "description": "Post jobs and connect with top candidates looking for their next big opportunity.",
-      "bgColor": "bg-green-100",
+      "bgColor": "bg-green-300",
       "iconColor": "text-green-500",
       "darkBgColor": "dark:bg-gray-800",
       "darkIconColor": "dark:text-green-400"
@@ -24,7 +24,7 @@
       "icon": "FaHandshake",
       "title": "Resources for Career Growth",
       "description": "Browse career advice, interview tips, and upSkilling resources to help you stand out.",
-      "bgColor": "bg-purple-100",
+      "bgColor": "bg-purple-300",
       "iconColor": "text-purple-500",
       "darkBgColor": "dark:bg-gray-800",
       "darkIconColor": "dark:text-purple-400"
@@ -34,8 +34,8 @@
       "icon": "FaBook",
       "title": "Learn & Improve Skills",
       "description": "Explore courses and workshops designed to help you advance your career and skillset.",
-      "bgColor": "bg-yellow-100",
-      "iconColor": "text-yellow-500",
+      "bgColor": "bg-red-300",
+      "iconColor": "text-red-500",
       "darkBgColor": "dark:bg-gray-800",
       "darkIconColor": "dark:text-yellow-400"
     }
